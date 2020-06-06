@@ -1,2 +1,2 @@
-# resume
+# Online Resume
 Resume page
