@@ -9,15 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
+    "url": "git+https://github.com/silverHub/resume.git"
   },
-  "keywords": [],
-  "author": "Ives van Hoorne",
+  "keywords": ["resume"],
+  "author": "Tamas Hoffman",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
-  },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "homepage": "https://silverhub.github.io/resume/",
   "devDependencies": {
     "serve": "^11.2.0"
   }
