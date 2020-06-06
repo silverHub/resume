@@ -1,0 +1,233 @@
+/* MAIN */
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #52575d;
+
+  --bg-dark-color: #33383f;
+  --text-dark-color: #959ea9;
+  --border-dark-color: #555e69;
+
+  --accent-blue-color: #10bcf9;
+}
+
+.page {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  padding: 40px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQMAAACxAfVuAAAABlBMVEX////w8PBJB7MPAAAAdElEQVR4Xu3PMQ5EQACF4VciWyAK7UQkdPYKIxFRiRtwlrFRKBQuIHEScbDtX1Tq1/ztnw+fOry/FMTuKDoKjGdDR4HdzjKgwI1pE1GwZt5VUTAks2kpz6N+z31LwTKlP0N5J5JIIokkkkgiiSSSSCKJJPoDn958rmW4fOIAAAAASUVORK5CYII=");
+}
+
+/*
+.page .pen {
+  position: absolute;
+  left: 100px;
+}
+*/
+
+@media print {
+  .resume-skills {
+    display: none;
+  }
+  iframe {
+    display: none;
+  }
+}
+
+.dark {
+  color: var(--text-dark-color);
+  background-color: var(--bg-dark-color);
+}
+
+.tech {
+  border-left: 2px solid var(--accent-blue-color);
+  padding-left: 8px;
+  line-height: 180%;
+}
+
+.section-title:after {
+  border-left: 30px solid var(--accent-blue-color);
+  box-shadow: inset 0 1px 0 0 #e9ebed;
+  display: block;
+  content: "";
+  height: 3px;
+  margin-top: 0.5rem;
+}
+
+.dark .section-title:after {
+  box-shadow: inset 0 1px 0 0 #e9ebed52;
+}
+.section-title {
+  letter-spacing: 2px;
+}
+
+/*
+primary: #555e69
+secondary: #33383f
+accent-blue: #10bcf9
+ */
+
+/* RESUME */
+.resume-container {
+  margin: auto;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: max-content;
+  text-align: justify;
+  background-color: var(--bg-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.resume-container a,
+.resume-container a:visited {
+  color: var(--text-color);
+  text-decoration-style: dotted;
+  text-decoration-color: var(--accent-blue-color);
+  text-underline-position: under;
+}
+
+.resume-container .dark a,
+.resume-container .dark a:visited {
+  color: var(--text-dark-color);
+}
+
+.resume-container a:hover,
+.resume-container .dark a:hover {
+  color: var(--accent-blue-color);
+}
+
+.resume-container h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-variant: small-caps;
+}
+
+.resume-container .article {
+  padding: 16px 24px;
+}
+
+.resume-header .name {
+  font-size: 300%;
+  text-align: right;
+  margin: 20px auto;
+  border-left: 10px solid var(--accent-blue-color);
+}
+
+.resume-header .title {
+  text-align: right;
+  margin: 0;
+}
+
+.resume-container > .resume-profile,
+.resume-container > .resume-contact {
+  padding-top: 0;
+}
+
+.resume-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-contact ul li {
+  line-height: 15px;
+  padding: 16px 32px;
+}
+
+.resume-contact ul li i {
+  width: 24px;
+  text-align: center;
+}
+
+.resume-contact ul li span {
+  display: inline-block;
+  padding-left: 16px;
+}
+
+.resume-education p {
+  margin: 2px;
+}
+
+.resume-education {
+  text-align: left;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 80%;
+  padding-top: 36px;
+}
+.subtitle::first-letter {
+  color: var(--accent-blue-color);
+}
+
+.resume-skills {
+  padding-top: 36px;
+}
+.resume-skills .skill {
+  font-weight: 700;
+  font-size: 80%;
+  display: block;
+}
+
+.resume-skills .progressbar {
+  background-color: var(--border-dark-color);
+  margin: 8px 0;
+}
+
+.resume-skills .progressbar > div {
+  background-color: var(--accent-blue-color);
+  width: 60%; /* Adjust with JavaScript */
+  height: 5px;
+}
+.resume-skills .progressbar > .w40 {
+  width: 40%;
+}
+
+.resume-skills .progressbar > .w80 {
+  width: 80%;
+}
+.resume-skills .progressbar > .w90 {
+  width: 90%;
+}
+
+.resume-experience {
+  position: relative;
+}
+
+.resume-experience .date,
+.resume-experience .company {
+  opacity: 0.8;
+}
+.resume-experience .date {
+  position: absolute;
+  right: 48px;
+  font-size: 80%;
+}
+.resume-experience ul {
+  list-style: none;
+}
+
+.resume-experience ul li::before {
+  content: "\2022";
+  color: var(--accent-blue-color);
+  font-weight: bold;
+
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.resume-avatar {
+  text-align: center;
+}
+
+.resume-avatar .avatar {
+  max-width: 50%;
+  border-radius: 50%;
+  border: 3px solid var(--accent-blue-color);
+}
