@@ -4,7 +4,7 @@
   "description": "CSS Grid",
   "main": "index.html",
   "scripts": {
-    "start": "serve",
+    "start": "serve public -l 5000 ",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
   "repository": {
