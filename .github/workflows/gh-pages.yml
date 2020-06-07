@@ -23,7 +23,7 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: echo
       run: |
-        echo ${{secret.GITHUB_TOKEN}},
+        echo ${{secrets.GITHUB_TOKEN}},
         echo test, and deploy your project.
 
     # Runs a single command using the runners shell
