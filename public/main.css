@@ -9,6 +9,26 @@
   --border-dark-color: #555e69;
 
   --accent-blue-color: #10bcf9;
+
+  --tw-gradient-to: #0ea5e9;
+  --tw-gradient-from: #22d3ee;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(34, 211, 238, 0));
+}
+
+.ribbon{
+  position: absolute;
+  top: 2.5rem;
+  right: -5rem;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 0.75rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  width: 25%;
+  height: auto;
+  transform: 45deg;
 }
 
 .page {
