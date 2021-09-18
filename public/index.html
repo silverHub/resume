@@ -8,8 +8,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
@@ -20,7 +22,7 @@
       <div class="resume-container">
         <section class="resume-header article">
           <h1 class="name">tamás hoffman</h1>
-          <h3 class="title">lead developer</h3>
+          <h3 class="title">SOFTWARE ARCHITECT & TEAM LEAD</h3>
         </section>
 
         <section class="resume-avatar dark article">
@@ -56,10 +58,11 @@
           <ul>
             <li>
               <i class="fas fa-mobile fa-lg"></i>
-              <span id="mobile">****</span>
+              <span id="mobile">+41 78 976 40 66</span>
             </li>
             <li>
-              <i class="fas fa-envelope fa-lg"></i><span id="email">****</span>
+              <i class="fas fa-envelope fa-lg"></i
+              ><span id="email">tms.hoffman+cv at gmail.com </span>
             </li>
             <li>
               <i class="fas fa-house-user fa-lg"></i
@@ -263,74 +266,6 @@
         </section>
       </div>
     </div>
-    <script>
-      const email = document.querySelector("#email");
-      const mobile = document.querySelector("#mobile");
-      const n = [...Array(10).keys(), "+", " "];
-      const l = [
-        ...Array.from(Array(26))
-          .map((e, i) => i + 65)
-          .map((x) => String.fromCharCode(x).toLowerCase()),
-        "",
-      ];
-
-      var mediaQueryList = window.matchMedia("print");
-      mediaQueryList.addListener(function (mql) {
-        if (mql.matches) {
-          if (email && mobile) {
-            mobile.innerHTML = [
-              n[10],
-              n[4],
-              n[1],
-              n[11],
-              n[7],
-              n[8],
-              n[11],
-              n[9],
-              n[7],
-              n[6],
-              n[11],
-              n[4],
-              n[0],
-              n[11],
-              n[6],
-              n[6],
-            ].join("");
-            email.innerHTML = [
-              l[19],
-              l[12],
-              l[18],
-              ".",
-              l[7],
-              l[14],
-              l[5],
-              l[5],
-              l[12],
-              l[0],
-              l[13],
-              "+",
-              l[2],
-              l[21],
-              n[11],
-              l[0],
-              l[19],
-              n[11],
-              l[6],
-              l[12],
-              l[0],
-              l[8],
-              l[11],
-              ".",
-              l[2],
-              l[14],
-              l[12],
-            ].join("");
-          }
-        } else {
-          mobile.innerHTML = "****";
-          email.innerHTML = "****";
-        }
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

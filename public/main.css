@@ -58,7 +58,8 @@
   box-shadow: inset 0 1px 0 0 #e9ebed52;
 }
 .section-title {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 /*
@@ -134,8 +135,7 @@ h4 {
 }
 
 .resume-contact ul li {
-  line-height: 15px;
-  padding: 16px 32px;
+  height: 3rem;
 }
 
 .resume-contact ul li i {
