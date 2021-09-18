@@ -5,7 +5,7 @@
   --text-color: #52575d;
 
   --bg-dark-color: #33383f;
-  --text-dark-color: #959ea9;
+  --text-dark-color: #e1e6ea;
   --border-dark-color: #555e69;
 
   --accent-blue-color: #10bcf9;
@@ -24,15 +24,6 @@
   left: 100px;
 }
 */
-
-@media print {
-  .resume-skills {
-    display: none;
-  }
-  iframe {
-    display: none;
-  }
-}
 
 .dark {
   color: var(--text-dark-color);
@@ -234,4 +225,18 @@ h4 {
   max-width: 50%;
   border-radius: 50%;
   border: 3px solid var(--accent-blue-color);
+}
+
+@media print {
+  .resume-skills {
+    display: none;
+  }
+  iframe {
+    display: none;
+  }
+
+  .dark {
+    color: var(--text-color);
+    background-color: white;
+  }
 }
