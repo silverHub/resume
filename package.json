@@ -18,6 +18,7 @@
   "license": "MIT",
   "homepage": "https://silverhub.github.io/resume/",
   "devDependencies": {
-    "serve": "^11.2.0"
+    "prettier": "2.4.1",
+    "serve": "^12.0.1"
   }
 }
